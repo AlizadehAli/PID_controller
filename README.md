@@ -42,7 +42,7 @@ P or "proportional" component has the highest effect on the response of the cont
 
 D, or "differential", component counteracts the P component's tendency to oscilate acound the reference line. A PD controller incorporating properly tuned D component drives the car smoothly to the center line. The video of designed PD controller performance is shown [here](./src/PD_controller.mp4)
 
-I, or "integral", component counteracts a bias in the CTE which intrinsically prevents the car to converge to the reference trajectory. This bias can stem from the steering drift, or any other undesirable forces/noises. A controller incorporating all P, I, D components drives the car smoother and more efficient. A video my PID controller performance against UDacity simulator is shown [here](./src/PID_controller.mp4).
+I, or "integral", component counteracts a bias in the CTE which intrinsically prevents the car to converge to the reference trajectory. This bias can stem from the steering drift, or any other undesirable forces/noises. A controller incorporating all P, I, D components drives the car smoother and more efficient. A video my PID controller performance against UDacity simulator is shown [here](./videos/PID_controller.mp4).
 
 ##### Hyperparameters (P, I, D coefficients) optimization
 
@@ -67,7 +67,8 @@ The initial gains for the controllers are defined as follows:
 
 Amogst the above controllers, PD and PID contrllers meet the simulation requirement. They both drive the car in the drivable road while the PID controller perform better in terms of smoothness of motion and CTE.
 
-The videos of [PD](./src/PD_controller.mp4) and [PID](./src/PID_controller.mp4) controllers are in videos folder.
+The videos of [PD](./videos) and [PID](./videos) controllers are in videos folder.
  
+<video src="src/PD_controller.mp4" width="320" height="200" controls preload></video>
 
 
