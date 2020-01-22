@@ -38,9 +38,9 @@ The implementation steps in this project closely follows the steps taught in the
 
 ##### Effect of the P, I, D component of the PID algorithm
 
-P or "proportional" component has the highest effect on the response of the controller. t drives the car by steering it proportional (opposite) to the car's CTE (distance to the center line). the magnitude of the steering is directly proportional to distance of the car to the center line. A controller solely designed with P component, P controller, cannot converge to the reference trajectory in the project which is shown in [this video](./src/P_controller.mp4).
+P or "proportional" component has the highest effect on the response of the controller. t drives the car by steering it proportional (opposite) to the car's CTE (distance to the center line). the magnitude of the steering is directly proportional to distance of the car to the center line. A controller solely designed with P component, P controller, cannot converge to the reference trajectory in the project which is shown in [this video](./videos/P_controller.mp4).
 
-D, or "differential", component counteracts the P component's tendency to oscilate acound the reference line. A PD controller incorporating properly tuned D component drives the car smoothly to the center line. The video of designed PD controller performance is shown [here](./src/PD_controller.mp4)
+D, or "differential", component counteracts the P component's tendency to oscilate acound the reference line. A PD controller incorporating properly tuned D component drives the car smoothly to the center line. The video of designed PD controller performance is shown [here](./videos/PD_controller.mp4)
 
 I, or "integral", component counteracts a bias in the CTE which intrinsically prevents the car to converge to the reference trajectory. This bias can stem from the steering drift, or any other undesirable forces/noises. A controller incorporating all P, I, D components drives the car smoother and more efficient. A video my PID controller performance against UDacity simulator is shown [here](./videos/PID_controller.mp4).
 
@@ -67,8 +67,6 @@ The initial gains for the controllers are defined as follows:
 
 Amogst the above controllers, PD and PID contrllers meet the simulation requirement. They both drive the car in the drivable road while the PID controller perform better in terms of smoothness of motion and CTE.
 
-The videos of [PD](./videos) and [PID](./videos) controllers are in videos folder.
- 
-<video src="src/PD_controller.mp4" width="320" height="200" controls preload></video>
+The videos of [PD](./videos/PD_controller.mp4) and [PID](./videos/PID_controller.mp4) controllers are in videos folder.
 
 
